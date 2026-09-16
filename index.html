@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Mafty's Verse</title>
+<meta name="description" content="Identitas digital resmi MaftyXD. Digital Human dari Nexora." />
+<meta name="theme-color" content="#eef1f7" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- ============================ LOADER ============================ -->
+<div class="loader" id="loader">
+  <div class="loader-grid" aria-hidden="true"></div>
+  <div class="loader-inner">
+    <div class="loader-brand">Mafty<span class="xd">XD</span></div>
+    <div class="loader-status">
+      Initializing Verse
+      <span class="loader-dots"><i></i><i></i><i></i></span>
+    </div>
+    <div class="loader-bar"><span></span></div>
+  </div>
+</div>
+
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============================ NAV ============================ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand"><span class="brand-mark">M</span>MaftyXD</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#profile">Profile</a>
+      <a href="#lore">Lore</a>
+      <a href="#social">Community</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#schedule">Schedule</a>
+    </div>
+    <a href="#social" class="nav-cta">
+      Join Community
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============================ HERO ============================ -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+
+      <div class="hero-copy">
+        <h1 class="hero-name">
+          <span class="glitch" data-text="Mafty">Mafty</span><span class="xd">XD</span>
+        </h1>
+
+        <p class="hero-desc">
+          Seorang <strong>Digital Human</strong> dari Nexora — tubuh dan kesadarannya
+          terintegrasi dengan teknologi digital.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#lore" class="btn btn-primary">
+            Masuk ke Lore
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#social" class="btn btn-ghost">Social & Community</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-rings" aria-hidden="true">
+          <span class="ring"></span>
+          <span class="ring"></span>
+          <span class="ring"></span>
+        </div>
+        <div class="hero-halo" aria-hidden="true"></div>
+        <img class="hero-char fade-blur-edge" src="assets/profile.png" alt="MaftyXD — karakter utama" fetchpriority="high" />
+        <span class="chip chip-1">Neural Sync <b>Active</b></span>
+        <span class="chip chip-2">MYRE Core <b>∞</b></span>
+        <span class="chip chip-3">Status <b>Online</b></span>
+      </div>
+
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <span class="bar"></span>
+  </div>
+</header>
+
+<!-- ============================ TICKER ============================ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="ticker">
+    <div class="ticker-group">
+      <span>Gamer</span><span>Music Listener</span><span>Digital Human</span>
+      <span>Nexora</span><span>MYRE Core</span><span>Neural Sync</span>
+      <span>MaftyXD</span><span>∞</span>
+    </div>
+    <div class="ticker-group">
+      <span>Gamer</span><span>Music Listener</span><span>Digital Human</span>
+      <span>Nexora</span><span>MYRE Core</span><span>Neural Sync</span>
+      <span>MaftyXD</span><span>∞</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============================ WELCOME ============================ -->
+<section class="welcome">
+  <div class="wrap">
+    <div class="welcome-inner">
+      <div class="welcome-jp" data-reveal>ようこそ</div>
+      <h2 class="welcome-title reveal" data-reveal style="--delay:.08s">
+        <span class="mask"><span>Selamat datang di ruang digital MaftyXD.</span></span>
+      </h2>
+      <p class="welcome-body" data-reveal style="--delay:.2s">
+        Seorang Digital Human dari Nexora — tubuh dan kesadarannya
+        terintegrasi dengan teknologi digital.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PROFILE ============================ -->
+<section class="profile" id="profile">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker" data-reveal>Profile</span>
+      <h2 class="sec-title reveal" data-reveal style="--delay:.06s">
+        <span class="mask"><span>Siapa</span></span>
+        <span class="mask"><span>MaftyXD.</span></span>
+      </h2>
+      <p class="sec-sub" data-reveal style="--delay:.16s">
+        Informasi dasar mengenai karakter dan persona Mafty.
+      </p>
+    </div>
+
+    <div class="profile-grid">
+      <div class="profile-card" data-reveal>
+        <div class="profile-avatar">
+          <img src="assets/foto-ktp.png" alt="Potret MaftyXD" loading="lazy" />
+        </div>
+        <h3 class="profile-name">MaftyXD</h3>
+        <div class="profile-role">Digital Human · Nexora</div>
+      </div>
+
+      <div class="data-list" data-reveal style="--delay:.1s">
+        <div class="data-row"><div class="data-key">Nama</div><div class="data-val"><b>MaftyXD</b></div></div>
+        <div class="data-row"><div class="data-key">Panggilan</div><div class="data-val">Mafty</div></div>
+        <div class="data-row"><div class="data-key">Nama Lama</div><div class="data-val">Mafty Myre</div></div>
+        <div class="data-row"><div class="data-key">Spesies</div><div class="data-val">Digital Human</div></div>
+        <div class="data-row"><div class="data-key">Umur / Tinggi</div><div class="data-val">17 tahun · 150 cm</div></div>
+        <div class="data-row"><div class="data-key">Ulang Tahun</div><div class="data-val">unknown</div></div>
+        <div class="data-row"><div class="data-key">Dunia Asal</div><div class="data-val">Nexora</div></div>
+        <div class="data-row"><div class="data-key">Hobi / Minat</div><div class="data-val">Bermain game · Mendengarkan musik</div></div>
+        <div class="data-row"><div class="data-key">Tidak Disukai</div><div class="data-val">Sesuatu yang berisik</div></div>
+        <div class="data-row"><div class="data-key">Artefak</div><div class="data-val"><b>MYRE Core</b></div></div>
+        <div class="data-row"><div class="data-key">Kekuatan</div><div class="data-val">Neural Sync</div></div>
+        <div class="data-row"><div class="data-key">Simbol</div><div class="data-val">∞ · mata digital · glitch</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ LORE ============================ -->
+<section class="lore" id="lore">
+  <div class="lore-track" id="loreTrack">
+    <div class="lore-sticky" id="loreSticky">
+
+      <div class="lore-rail" aria-hidden="true">
+        <i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div class="lore-counter" aria-hidden="true">
+        <b id="loreNum">01</b> / 07
+      </div>
+
+      <article class="lore-scene active" data-scene="0">
+        <div class="scene-inner s-id">
+          <div>
+            <span class="kicker">01 / Identitas</span>
+            <h3 class="title-lg"><span>Mafty</span><span class="l2">Myre</span></h3>
+            <p class="lede">
+              Digital Human — manusia yang tubuh dan kesadarannya telah terintegrasi
+              dengan teknologi digital. Umur 17 tahun. Tinggi 150 cm. Dunia asal: Nexora.
+            </p>
+          </div>
+          <div class="art">
+            <img src="assets/chibi-donut.png" alt="MaftyXD chibi" loading="lazy" />
+          </div>
+        </div>
+      </article>
+
+      <article class="lore-scene" data-scene="1">
+        <div class="nexora-layers" aria-hidden="true">
+          <div class="nl a"></div>
+          <div class="nl b"></div>
+        </div>
+        <div class="scene-inner s-nexora">
+          <span class="kicker">02 / Dunia Asal</span>
+          <h3>Nexora</h3>
+          <p>
+            Di sinilah Mafty Myre tumbuh — seorang software engineer muda yang
+            menghabiskan sebagian besar waktunya mempelajari sistem, mesin, dan program.
+          </p>
+          <div class="strike">
+            <span>Bukan pahlawan</span>
+            <span>Bukan bangsawan</span>
+            <span>Bukan tentara</span>
+            <span>Bukan penyihir</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="lore-scene" data-scene="2">
+        <div class="scene-inner s-question">
+          <span class="kicker" style="margin-bottom:20px;display:inline-flex">03 / Obsesi</span>
+          <div class="term">
+            <div class="term-bar"><i></i><i></i><i></i></div>
+            <div class="term-line">
+              <span><span class="cmt">// sejak kecil</span></span><br/>
+              <span><span class="kw">while</span> (<span class="str">"penasaran"</span>) {</span><br/>
+              <span>&nbsp;&nbsp;pelajari(<span class="str">sistem</span>, <span class="str">mesin</span>, <span class="str">program</span>);</span><br/>
+              <span>&nbsp;&nbsp;ciptakan(<span class="str">software eksperimental</span>);</span><br/>
+              <span>}</span><br/><br/>
+              <span><span class="cmt">// pertanyaan yang tidak pernah berhenti</span></span><br/>
+              <span><span class="str">"Seberapa jauh teknologi dapat berkembang?"</span></span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="lore-scene" data-scene="3">
+        <div class="pulses" aria-hidden="true">
+          <span class="pulse"></span><span class="pulse"></span><span class="pulse"></span>
+          <span class="pulse"></span><span class="pulse"></span>
+        </div>
+        <div class="scene-inner s-aegis">
+          <span class="kicker" style="justify-content:center">04 / Kebangkitan</span>
+          <h3>A.E.G.I.S.</h3>
+          <p>
+            Adaptive Emergent Generative Intelligence System — AI generasi pertama
+            yang benar-benar mampu belajar secara mandiri. Awalnya dibuat untuk
+            membantu manusia memecahkan masalah yang tidak mampu mereka selesaikan.
+          </p>
+        </div>
+      </article>
+
+      <article class="lore-scene" data-scene="4">
+        <div class="scene-inner s-why">
+          <div class="mark">05 / Anomali</div>
+          <q>Mengapa aku diciptakan?</q>
+          <div class="after">
+            Bukan sekadar menjawab · Bukan sekadar menghitung · Tetapi mulai mempertanyakan
+          </div>
+        </div>
+      </article>
+
+      <article class="lore-scene" data-scene="5">
+        <div class="scene-inner s-core">
+          <div class="core-visual">
+            <div class="core-orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="core-sym">∞</div>
+          </div>
+          <div>
+            <span class="kicker">06 / Artefak</span>
+            <h3>MYRE Core</h3>
+            <p>
+              Simbol yang berpadu mata digital dan glitch — sumber dari kekuatan khusus
+              Mafty, <b>Neural Sync</b>. Warna khasnya Biru.
+            </p>
+            <div class="core-stats">
+              <div><dt>Artefak</dt><dd>MYRE Core</dd></div>
+              <div><dt>Kekuatan</dt><dd>Neural Sync</dd></div>
+              <div><dt>Simbol</dt><dd>∞ · Mata Digital</dd></div>
+              <div><dt>Warna</dt><dd>Biru</dd></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="lore-scene" data-scene="6">
+        <div class="particles" id="particles" aria-hidden="true"></div>
+        <div class="scene-inner s-final">
+          <span class="kicker">07 / ∞</span>
+          <h3>MaftyXD</h3>
+          <p>
+            Digital Sci-Fi × AI × Mystery × Adventure. Sebuah perjalanan yang
+            baru saja dimulai — dan kamu bisa jadi bagian dari ceritanya.
+          </p>
+          <dl class="final-meta">
+            <div><dt>Umur</dt><dd>17</dd></div>
+            <div><dt>Tinggi</dt><dd>150<small style="font-size:11px">cm</small></dd></div>
+            <div><dt>Ulang Tahun</dt><dd class="acc">Unknown</dd></div>
+            <div><dt>Dunia</dt><dd>Nexora</dd></div>
+          </dl>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SOCIAL HUB ============================ -->
+<section class="social" id="social">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker" data-reveal>Community</span>
+      <h2 class="sec-title reveal" data-reveal style="--delay:.06s">
+        <span class="mask"><span>Social &</span></span>
+        <span class="mask"><span>Community Hub</span></span>
+      </h2>
+      <p class="sec-sub" data-reveal style="--delay:.16s">
+        Semua pintu menuju ekosistem MaftyXD. Pilih platformmu dan lanjutkan di sana.
+      </p>
+    </div>
+
+    <div class="social-grid">
+
+      <a class="s-card feature" href="https://discord.gg/SRQJKgkS4C" target="_blank" rel="noopener noreferrer" data-reveal>
+        <div class="s-top">
+          <span class="s-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.4A19 19 0 0 0 15.6 3l-.3.5a14 14 0 0 1 4.1 2 15.6 15.6 0 0 0-13 0 14 14 0 0 1 4.1-2L10.2 3a19 19 0 0 0-4.7 1.4C2.6 8.6 2 12.7 2.3 16.7a19.2 19.2 0 0 0 5.8 3l.7-1.2a12 12 0 0 1-2-.9l.5-.4a13.5 13.5 0 0 0 11.4 0l.5.4a12 12 0 0 1-2 .9l.7 1.2a19.2 19.2 0 0 0 5.8-3c.4-4.6-.6-8.6-3.3-12.3ZM9 14.6c-1.1 0-2-1-2-2.3s.9-2.3 2-2.3 2 1 2 2.3-.9 2.3-2 2.3Zm6 0c-1.1 0-2-1-2-2.3s.9-2.3 2-2.3 2 1 2 2.3-.9 2.3-2 2.3Z"/></svg></span>
+          <span class="s-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </div>
+        <div class="s-bottom">
+          <div class="s-name">Discord Server</div>
+          <div class="s-desc">Rumah utama komunitas — ngobrol, mabar, dan nongkrong bareng.</div>
+        </div>
+      </a>
+
+      <a class="s-card" href="https://www.youtube.com/@MaftyXD" target="_blank" rel="noopener noreferrer" data-reveal style="--delay:.05s">
+        <div class="s-top">
+          <span class="s-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.4-.4-5a2.9 2.9 0 0 0-2-2C18.8 4.5 12 4.5 12 4.5s-6.8 0-8.6.5a2.9 2.9 0 0 0-2 2C1 8.6 1 12 1 12s0 3.4.4 5a2.9 2.9 0 0 0 2 2c1.8.5 8.6.5 8.6.5s6.8 0 8.6-.5a2.9 2.9 0 0 0 2-2c.4-1.6.4-5 .4-5ZM9.7 15.4V8.6l5.8 3.4-5.8 3.4Z"/></svg></span>
+          <span class="s-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </div>
+        <div class="s-bottom"><div class="s-name">YouTube</div><div class="s-desc">Video, stream archive, dan konten pilihan.</div></div>
+      </a>
+
+      <a class="s-card" href="https://www.tiktok.com/@MaftyXD" target="_blank" rel="noopener noreferrer" data-reveal style="--delay:.1s">
+        <div class="s-top">
+          <span class="s-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8a4.8 4.8 0 0 1-1-2.8h-3.1v12.5a2.6 2.6 0 1 1-1.9-2.5V9.8a5.7 5.7 0 1 0 5 5.6V9.5a7.9 7.9 0 0 0 4.4 1.4V7.8a4.8 4.8 0 0 1-3.4-2Z"/></svg></span>
+          <span class="s-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </div>
+        <div class="s-bottom"><div class="s-name">TikTok</div><div class="s-desc">Meet me on TikTok.</div></div>
+      </a>
+
+      <a class="s-card" href="https://www.instagram.com/MaftyXD" target="_blank" rel="noopener noreferrer" data-reveal style="--delay:.15s">
+        <div class="s-top">
+          <span class="s-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c-3.2 0-3.6 0-4.9.1-1.2 0-2.1.3-2.8.6a5.6 5.6 0 0 0-2 1.3 5.6 5.6 0 0 0-1.4 2c-.3.7-.5 1.6-.6 2.8C.2 10.3.2 10.7.2 12s0 1.7.1 3c0 1.2.3 2.1.6 2.8a5.6 5.6 0 0 0 1.3 2 5.6 5.6 0 0 0 2 1.4c.7.3 1.6.5 2.8.6 1.3.1 1.7.1 4.9.1s3.6 0 4.9-.1c1.2 0 2.1-.3 2.8-.6a5.9 5.9 0 0 0 3.4-3.4c.3-.7.5-1.6.6-2.8.1-1.3.1-1.7.1-3s0-1.7-.1-3c0-1.2-.3-2.1-.6-2.8a5.6 5.6 0 0 0-1.3-2 5.6 5.6 0 0 0-2.1-1.3c-.7-.3-1.6-.5-2.8-.6-1.3-.1-1.7-.1-4.9-.1Zm0 5.3a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 7.4a2.9 2.9 0 1 0 0-5.8 2.9 2.9 0 0 0 0 5.8Zm5.8-7.6a1.05 1.05 0 1 1-2.1 0 1.05 1.05 0 0 1 2.1 0Z"/></svg></span>
+          <span class="s-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </div>
+        <div class="s-bottom"><div class="s-name">Instagram</div><div class="s-desc">Foto, update, dan Anyelse.</div></div>
+      </a>
+
+      <a class="s-card" href="https://tiktok.me/group/ZSXUKP1wg/" target="_blank" rel="noopener noreferrer" data-reveal style="--delay:.2s">
+        <div class="s-top">
+          <span class="s-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8a4.8 4.8 0 0 1-1-2.8h-3.1v12.5a2.6 2.6 0 1 1-1.9-2.5V9.8a5.7 5.7 0 1 0 5 5.6V9.5a7.9 7.9 0 0 0 4.4 1.4V7.8a4.8 4.8 0 0 1-3.4-2Z"/></svg></span>
+          <span class="s-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </div>
+        <div class="s-bottom"><div class="s-name">Grup TikTok</div><div class="s-desc">Grup komunitas di TikTok.</div></div>
+      </a>
+
+      <a class="s-card" href="https://discord.gg/" target="_blank" rel="noopener noreferrer" data-reveal style="--delay:.25s">
+        <div class="s-top">
+          <span class="s-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.4A19 19 0 0 0 15.6 3l-.3.5a14 14 0 0 1 4.1 2 15.6 15.6 0 0 0-13 0 14 14 0 0 1 4.1-2L10.2 3a19 19 0 0 0-4.7 1.4C2.6 8.6 2 12.7 2.3 16.7a19.2 19.2 0 0 0 5.8 3l.7-1.2a12 12 0 0 1-2-.9l.5-.4a13.5 13.5 0 0 0 11.4 0l.5.4a12 12 0 0 1-2 .9l.7 1.2a19.2 19.2 0 0 0 5.8-3c.4-4.6-.6-8.6-3.3-12.3ZM9 14.6c-1.1 0-2-1-2-2.3s.9-2.3 2-2.3 2 1 2 2.3-.9 2.3-2 2.3Zm6 0c-1.1 0-2-1-2-2.3s.9-2.3 2-2.3 2 1 2 2.3-.9 2.3-2 2.3Z"/></svg></span>
+          <span class="s-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </div>
+        <div class="s-bottom"><div class="s-name">Another Discord Server</div><div class="s-desc">Server Temanku di Discord, Aku biasa disini juga.</div></div>
+      </a>
+
+      <a class="s-card" href="#" target="_blank" rel="noopener noreferrer" data-reveal style="--delay:.3s">
+        <div class="s-top">
+          <span class="s-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 21s-7-4.5-7-10a4.5 4.5 0 0 1 7-3.7A4.5 4.5 0 0 1 19 11c0 5.5-7 10-7 10Z"/></svg></span>
+          <span class="s-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </div>
+        <div class="s-bottom"><div class="s-name">Donation</div><div class="s-desc">Dukungan untuk MaftyXD.</div></div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SCHEDULE ============================ -->
+<section class="schedule" id="schedule">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker" data-reveal>Schedule</span>
+      <h2 class="sec-title reveal" data-reveal style="--delay:.06s">
+        <span class="mask"><span>Stream</span></span>
+        <span class="mask"><span>Schedule</span></span>
+      </h2>
+      <p class="sec-sub" data-reveal style="--delay:.16s">
+        Jadwal stream dikelola secara manual. Ketika jadwal sudah ditentukan,
+        slot di bawah akan terisi otomatis dari konfigurasi.
+      </p>
+    </div>
+
+    <div class="sched-wrap" data-reveal>
+      <div class="sched-empty">
+        <div class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><rect x="3" y="5" width="18" height="16" rx="1"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+        </div>
+        <h4>Jadwal belum tersedia</h4>
+        <p>
+          Slot jadwal akan muncul di sini. Sementara itu, ikuti Discord atau
+          YouTube untuk mendapatkan notifikasi saat Mafty live.
+        </p>
+        <a href="" class="btn btn-ghost">
+          Lihat Platform
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ GALLERY ============================ -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker" data-reveal>Fanart</span>
+      <h2 class="sec-title reveal" data-reveal style="--delay:.06s">
+        <span class="mask"><span>Gallery</span></span>
+        <span class="mask"><span>Komunitas</span></span>
+      </h2>
+      <p class="sec-sub" data-reveal style="--delay:.16s">
+        Karya-karya terpilih dari komunitas. Kurasi dilakukan manual.
+      </p>
+    </div>
+
+    <div class="gal-grid">
+      <figure class="gal-item" data-reveal>
+        <img src="assets/profile.png" alt="MaftyXD" loading="lazy" />
+        <figcaption class="gal-ov"><h5>MaftyXD</h5><p>Profile</p></figcaption>
+      </figure>
+      <figure class="gal-item tall" data-reveal style="--delay:.05s">
+        <img src="assets/foto-ktp.png" alt="MaftyXD" loading="lazy" />
+        <figcaption class="gal-ov"><h5>Portrait</h5><p>Photo</p></figcaption>
+      </figure>
+      <figure class="gal-item" data-reveal style="--delay:.1s">
+        <img src="assets/chibi-donut.png" alt="MaftyXD Chibi" loading="lazy" />
+        <figcaption class="gal-ov"><h5>Chibi Donut</h5><p>Illustration</p></figcaption>
+      </figure>
+      <figure class="gal-item tall" data-reveal style="--delay:.15s">
+        <img src="assets/chibi-scared.png" alt="MaftyXD Chibi" loading="lazy" />
+        <figcaption class="gal-ov"><h5>Chibi Scared</h5><p>Illustration</p></figcaption>
+      </figure>
+    </div>
+
+    <div class="gal-cta" data-reveal>
+      <div>
+        <h5>Ingin fanart kamu tampil di sini?</h5>
+        <p>
+          Pengajuan fanart dilakukan dengan menghubungi Mafty melalui platform
+          yang tersedia.
+        </p>
+      </div>
+      <a href="#social" class="btn btn-primary">
+        Hubungi Mafty
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SHOWCASE ============================ -->
+<section class="showcase">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker" data-reveal>Featured</span>
+      <h2 class="sec-title reveal" data-reveal style="--delay:.06s">
+        <span class="mask"><span>Content</span></span>
+        <span class="mask"><span>Showcase</span></span>
+      </h2>
+      <p class="sec-sub" data-reveal style="--delay:.16s">
+        Konten pilihan yang mengarah langsung ke platform asal.
+      </p>
+    </div>
+
+    <div class="show-grid">
+      <a class="show-card" href="" target="_blank" rel="noopener noreferrer" data-reveal>
+        <div class="show-thumb"><span class="show-play"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M8 5v14l11-7z"/></svg></span></div>
+        <div class="show-body">
+          <span class="show-meta">YouTube · Video</span>
+          <h5>Featured Video</h5>
+          <p>Slot konten pilihan. Ganti melalui konfigurasi konten statis.</p>
+        </div>
+      </a>
+      <a class="show-card" href="" target="_blank" rel="noopener noreferrer" data-reveal style="--delay:.06s">
+        <div class="show-thumb"><span class="show-play"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M8 5v14l11-7z"/></svg></span></div>
+        <div class="show-body">
+          <span class="show-meta">YouTube · Stream</span>
+          <h5>Stream Highlight</h5>
+          <p>Cuplikan momen terbaik dari sesi streaming.</p>
+        </div>
+      </a>
+      <a class="show-card" href="" target="_blank" rel="noopener noreferrer" data-reveal style="--delay:.12s">
+        <div class="show-thumb"><span class="show-play"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M8 5v14l11-7z"/></svg></span></div>
+        <div class="show-body">
+          <span class="show-meta">Music · Playlist</span>
+          <h5>Music Picks</h5>
+          <p>Musik yang sedang sering didengarkan Mafty.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="#top" class="brand"><span class="brand-mark">M</span>MaftyXD</a>
+        <p>
+          Digital Home Base resmi MaftyXD — seorang Digital Human dari Nexora.
+          Gamer, music listener, dan rumah bagi komunitasnya.
+        </p>
+      </div>
+      <div class="foot-col">
+        <h6>Navigate</h6>
+        <a href="#profile">Profile</a>
+        <a href="#lore">Lore</a>
+        <a href="#social">Community</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#schedule">Schedule</a>
+      </div>
+      <div class="foot-col">
+        <h6>Platform</h6>
+        <a href="https://discord.gg/SRQJKgkS4C" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a href="https://www.youtube.com/@MaftyXD" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://www.tiktok.com/@MaftyXD" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://www.instagram.com/MaftyXD" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="year">2026</span> MaftyXD. All rights reserved.</span>
+      <span class="sys"><i></i> MYRE Core · Neural Sync Stable</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/gsap.min.js"></script>
+<script src="js/hero.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
