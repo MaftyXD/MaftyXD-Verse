@@ -41,53 +41,7 @@
     });
   });
 
-  /* ── Reveal on scroll ── */
-  var revealEls = document.querySelectorAll('[data-reveal], .reveal');
-  if ('IntersectionObserver' in window){
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if (e.isIntersecting){
-          e.target.classList.add('in');
-          io.unobserve(e.target);
-        }
-      });
-    }, {threshold:0.12, rootMargin:'0px 0px -8% 0px'});
-    revealEls.forEach(function(el){ io.observe(el); });
-  } else {
-    revealEls.forEach(function(el){ el.classList.add('in'); });
-  }
-
-  /* ── Social cards — stagger entrance via .in class ── */
-  var sCards = document.querySelectorAll('.s-card');
-  if (sCards.length && 'IntersectionObserver' in window){
-    var scIO = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if (e.isIntersecting){
-          e.target.classList.add('in');
-          scIO.unobserve(e.target);
-        }
-      });
-    }, {threshold:0.1, rootMargin:'0px 0px -5% 0px'});
-    sCards.forEach(function(c){ scIO.observe(c); });
-  } else {
-    sCards.forEach(function(c){ c.classList.add('in'); });
-  }
-
-  /* ── Showcase cards — stagger entrance via .in class ── */
-  var showCards = document.querySelectorAll('.show-card');
-  if (showCards.length && 'IntersectionObserver' in window){
-    var shIO = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if (e.isIntersecting){
-          e.target.classList.add('in');
-          shIO.unobserve(e.target);
-        }
-      });
-    }, {threshold:0.1, rootMargin:'0px 0px -5% 0px'});
-    showCards.forEach(function(c){ shIO.observe(c); });
-  } else {
-    showCards.forEach(function(c){ c.classList.add('in'); });
-  }
+  /* ── Reveal on scroll — handled by animations.js (GSAP) ── */
 
   /* ── Ticker — duplicate for seamless loop ── */
   var ticker = document.getElementById('ticker');
@@ -119,7 +73,11 @@
     if (idx < 0) idx = 0;
     if (idx !== activeIndex){
       activeIndex = idx;
-      scenes.forEach(function(s, i){ s.classList.toggle('active', i === idx); });
+      scenes.forEach(function(s, i){
+        var isActive = i === idx;
+        s.classList.toggle('active', isActive);
+        if (isActive && window.MaftyAnim) window.MaftyAnim.activateScene(s);
+      });
       railDots.forEach(function(d, i){ d.classList.toggle('on', i === idx); });
       counter.textContent = String(idx + 1).padStart(2, '0');
     }
